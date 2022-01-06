@@ -13,6 +13,24 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+  Product.findAll({
+    include: [
+      {
+        model: Category,
+        attributes: ['category_name'],
+      },
+      {
+        model: Tag,
+        attributes: ['tag_name'],
+        through: ProductTag
+      }
+    ]
+  })
+    .then(dbCategoryData => res.json(dbCategoryData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+  });
 });
 
 // create new product
