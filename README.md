@@ -12,4 +12,4 @@
   Please do not hesitate to reach out to me directly with additional questions via my email address or Github Profile below:
   
   * Email: [erin.michon@gmail.com](mailto:alsdkfj) 
-  * Github Profile: [erin-michon](https://github.com/aslkdjf)# commence-commerce
+  * Github Profile: [erin-michon](https://github.com/aslkdjf)
